@@ -1,0 +1,10 @@
+@media(max-width: 640px) {
+  main {
+    flex-direction: column;
+
+    .col2, .col3 {
+      width: auto;
+      height: 50px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'mixins';
+@import 'mediaQs';
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header,
+footer {
+  padding: 20px;
+  background: #282828;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+
+
+  .col1 {
+    flex-grow: 1;
+
+  }
+  .col2 {
+    width: 160px;
+
+    order: -1;
+  }
+  .col3 {
+    width: 160px;
+
+  }
+}
+
+
+.item {
+    background-color: #fff;
+    width: 600px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 5em;
+    color: #594255;
+    border: 5px solid red;
+    @include border-radius(10px);
+
+  //  @include moveAround();
+}
